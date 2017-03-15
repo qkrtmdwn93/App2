@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="태어난 년도를 입력하세요"/>
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자를 입력하세요"/>
+
+    <Button
+        android:id="@+id/calcu_Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나이계산"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나이를 입력하세요"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자를 입력하세요"/>
+
+    <Button
+        android:id="@+id/calcu_Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="태어난 해 계산"/>
+</LinearLayout>

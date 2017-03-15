@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="숫자 1"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/enter_number1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="정수 입력"
+            android:layout_toEndOf="@id/number1"/>
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="숫자 2"
+            android:layout_below="@id/number1"
+            android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/enter_number2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="정수 입력"
+        android:layout_below="@id/enter_number1"
+        android:layout_toEndOf="@id/number2"/>
+
+    <Button
+    android:id="@+id/plus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="더하기"
+    android:layout_below="@id/number2"
+    android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="빼기"
+        android:layout_below="@id/plus"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="곱하기"
+        android:layout_below="@id/minus"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나누기"
+        android:layout_below="@id/product"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

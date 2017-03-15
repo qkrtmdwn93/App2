@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/Text_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="피자(15000원)"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/enter_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="개수 입력"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/Text_spaghetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스파게티(13000원)"
+        android:layout_below="@id/Text_pizza"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/enter_spaghetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="개수 입력"
+        android:layout_alignStart="@id/enter_pizza"
+        android:layout_alignBottom="@id/Text_spaghetti" />
+
+    <TextView
+        android:id="@+id/Text_salad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="샐러드(9000원)"
+        android:layout_below="@id/Text_spaghetti"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/enter_salad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="개수 입력"
+        android:layout_alignStart="@id/enter_spaghetti"
+        android:layout_alignBottom="@id/Text_salad" />
+
+    <CheckBox
+        android:id="@+id/isHave_MembershipCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text_salad"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="멤버쉽 카드 있음(10% 할인)"
+        android:layout_alignBaseline="@id/isHave_MembershipCard"
+        android:layout_toEndOf="@id/isHave_MembershipCard" />
+    
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="금액 계산하기"
+        android:layout_below="@id/isHave_MembershipCard"/>
+
+    <TextView
+        android:id="@+id/text_orderCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문개수"
+        android:layout_below="@id/calculate"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/orderCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0개"
+        android:textColor="#ff0000ff"
+        android:layout_alignBaseline="@+id/text_orderCount"
+        android:layout_alignStart="@+id/enter_salad" />
+
+    <TextView
+        android:id="@+id/text_orderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문금액"
+        android:layout_below="@id/text_orderCount"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/orderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0원"
+        android:textColor="#ff0000ff"
+        android:layout_alignBaseline="@id/text_orderPrice"
+        android:layout_alignStart="@id/orderCount"/>
+</RelativeLayout>
